@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'FreightBigProBook';
+    src: url('FreightBigProBook-Regular.eot');
+    src: local('☞FreightBig Pro Book'), local('FreightBigProBook-Regular'),
+        url('FreightBigProBook-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBook-Regular.woff2') format('woff2'),
+        url('FreightBigProBook-Regular.woff') format('woff'),
+        url('FreightBigProBook-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProBlack';
+    src: url('FreightBigProBlack-Regular.eot');
+    src: local('☞FreightBig Pro Black'), local('FreightBigProBlack-Regular'),
+        url('FreightBigProBlack-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBlack-Regular.woff2') format('woff2'),
+        url('FreightBigProBlack-Regular.woff') format('woff'),
+        url('FreightBigProBlack-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProMedium';
+    src: url('FreightBigProMedium-Italic.eot');
+    src: local('☞FreightBig Pro Medium Italic'), local('FreightBigProMedium-Italic'),
+        url('FreightBigProMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProMedium-Italic.woff2') format('woff2'),
+        url('FreightBigProMedium-Italic.woff') format('woff'),
+        url('FreightBigProMedium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProLight';
+    src: url('FreightBigProLight-Regular.eot');
+    src: local('☞FreightBig Pro Light'), local('FreightBigProLight-Regular'),
+        url('FreightBigProLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProLight-Regular.woff2') format('woff2'),
+        url('FreightBigProLight-Regular.woff') format('woff'),
+        url('FreightBigProLight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProBold';
+    src: url('FreightBigProBold-Italic.eot');
+    src: local('☞FreightBig Pro Bold Italic'), local('FreightBigProBold-Italic'),
+        url('FreightBigProBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBold-Italic.woff2') format('woff2'),
+        url('FreightBigProBold-Italic.woff') format('woff'),
+        url('FreightBigProBold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBlack';
+    src: url('FreightBigProBlack-Italic.eot');
+    src: local('☞FreightBig Pro Black Italic'), local('FreightBigProBlack-Italic'),
+        url('FreightBigProBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBlack-Italic.woff2') format('woff2'),
+        url('FreightBigProBlack-Italic.woff') format('woff'),
+        url('FreightBigProBlack-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBold';
+    src: url('FreightBigProBold-Regular.eot');
+    src: local('☞FreightBig Pro Bold'), local('FreightBigProBold-Regular'),
+        url('FreightBigProBold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBold-Regular.woff2') format('woff2'),
+        url('FreightBigProBold-Regular.woff') format('woff'),
+        url('FreightBigProBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProSemibold';
+    src: url('FreightBigProSemibold-Regular.eot');
+    src: local('☞FreightBig Pro Semibold'), local('FreightBigProSemibold-Regular'),
+        url('FreightBigProSemibold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProSemibold-Regular.woff2') format('woff2'),
+        url('FreightBigProSemibold-Regular.woff') format('woff'),
+        url('FreightBigProSemibold-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProMedium';
+    src: url('FreightBigProMedium-Regular.eot');
+    src: local('☞FreightBig Pro Medium'), local('FreightBigProMedium-Regular'),
+        url('FreightBigProMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProMedium-Regular.woff2') format('woff2'),
+        url('FreightBigProMedium-Regular.woff') format('woff'),
+        url('FreightBigProMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightBigProLight';
+    src: url('FreightBigProLight-Italic.eot');
+    src: local('☞FreightBig Pro Light Italic'), local('FreightBigProLight-Italic'),
+        url('FreightBigProLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProLight-Italic.woff2') format('woff2'),
+        url('FreightBigProLight-Italic.woff') format('woff'),
+        url('FreightBigProLight-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProBook';
+    src: url('FreightBigProBook-Italic.eot');
+    src: local('☞FreightBig Pro Book Italic'), local('FreightBigProBook-Italic'),
+        url('FreightBigProBook-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProBook-Italic.woff2') format('woff2'),
+        url('FreightBigProBook-Italic.woff') format('woff'),
+        url('FreightBigProBook-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreightBigProSemibold';
+    src: url('FreightBigProSemibold-Italic.eot');
+    src: local('☞FreightBig Pro Semibold Italic'), local('FreightBigProSemibold-Italic'),
+        url('FreightBigProSemibold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FreightBigProSemibold-Italic.woff2') format('woff2'),
+        url('FreightBigProSemibold-Italic.woff') format('woff'),
+        url('FreightBigProSemibold-Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+#loader #yellow1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #F5E41B;
+    z-index: 8;
+}
+
+#loader #yellow2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #F5E41B;
+    z-index: 7;
+}
+
+#loader #black1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #000;
+    z-index: 5;
+}
+
+#loader video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: 6;
+}
+
+#loader h1 {
+    position: relative;
+    font-size: 6.9vw;
+    line-height: 0.7;
+    font-family: 'FreightBigProLight';
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #fff;
+    z-index: 10;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    padding: 35px 60px;
+    z-index: 100;
+}
+
+#nav svg {
+    cursor: pointer;
+}
+
+#nav svg path {
+    filter: invert(100%);
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #F5E41B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1 {
+    font-size: 6.9vw;
+    line-height: 0.7;
+    font-family: 'FreightBigProLight';
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#page2 .elem {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#page2 .elem h2 {
+    width: 100%;
+    position: relative;
+    font-size: 7vw;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 5.1vw;
+    font-family: 'FreightBigProLight';
+    font-weight: 200;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+#page2 .elem:hover>h2 {
+    color: #000;
+    font-style: italic;
+}
+
+#page2 .elem .stripe {
+    background-color: #F5E41B;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -40%) scaleY(0);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#page2 .elem .blur {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 23%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #f5e31b, #F5E41B, #f5e31b);
+    box-shadow: 10px 0 50px 50px #F5E41B, -10px 0px 50px 50px #F5E41B;
+    z-index: 2;
+}
+
+#page2 .elem:hover>.stripe {
+    transform: translate(0, -40%) scaleY(1);
+}
+
+#page2 .elem .stripe .stripe-section {
+    display: inline-block;
+    padding: 6px 0;
+    animation-name: stripe-motion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#page2 .elem .stripe .stripe-section h5 {
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 34px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+#page2 .elem:hover>.stripe>.stripe-section>h5 {
+    opacity: 1;
+}
+
+@keyframes stripe-motion {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+#page3 .img-container {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+}
+
+#page3 .img-container .col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#page3 .img-container .img-box {
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#page3 .img-container .img-box .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    z-index: 4;
+}
+
+#page3 .img-container .img-box .overlay p {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'FreightBigProLight';
+    font-weight: 300;
+    line-height: 0.9;
+}
+
+#page3 .img-container .img-box img {
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+#page3 .img-container .img-box:hover .overlay {
+    opacity: 1;
+}
+
+#page3 .img-container .img-box:hover img {
+    transform: scale(1.1);
+}
+
+#page3 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
+}
+
+#page3 a svg{
+    transform: rotate(180deg);
+}
+
+#page3 a svg polyline {
+    stroke: #000;
+}
