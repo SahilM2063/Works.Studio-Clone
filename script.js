@@ -33,7 +33,6 @@ function loader() {
         display: "none"
     })
 }
-
 loader();
 
 // locomotive smooth scroll
@@ -42,9 +41,7 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-
 // hovering list items and change bg
-
 const elems = document.querySelectorAll(".elem");
 const page2 = document.getElementById("page2");
 
@@ -55,15 +52,12 @@ elems.forEach(function (elem) {
     })
 })
 
-
 // scroll back to top
-
 document.querySelector("#page3 a").addEventListener("click", function () {
     scroll.scrollTo(0)
 })
 
 // page by page scroll
-
 let screenHeight = window.innerHeight;
 
 document.querySelector("#page1 .page-footer a").addEventListener("click", function () {
@@ -77,7 +71,6 @@ document.querySelector("#page2 .page-footer a").addEventListener("click", functi
 window.addEventListener("resize", function () {
     screenHeight = window.innerHeight
 })
-
 
 // navbar opening and closing 
 const nav_elems = document.querySelectorAll("#nav .nav-right .elems");
